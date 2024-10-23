@@ -1,1 +1,75 @@
+<html>                                                                          
+<head>                                                                          
+<link rel="stylesheet" href="styles.css">                                       
+<style type="text/css">                                                         
+    #content {position:absolute;  top: 220px; width: 100%; font-size: 20px;}    
+                .left-col{background-color:#ffffff; width: 30%; display:inline-block;height:300px;
+                                  vertical-align: top; padding: 5%; }           
+                .right-col{width: 30%; display:inline-block; position:relative; 
+                                        background-color:#ffffff;padding: 5%;}  
+        .continuous-content{                                                    
+            width: 100%;                                                        
+            display:none                                                        
+        }                                                                       
+    @media (max-width:650px)                                                    
+    {                                                                           
+        .left-col{display: none}                                                
+        .right-col{display: none}                                               
+        .continuous-content{display: block;}                                    
+    }                                                                           
+    @media (max-width:400px)                                                    
+    {                                                                           
+        ul#nav a {                                                              
+        padding: 2px 5px;                                                       
+        font-size: 15px;                                                        
+        }                                                                       
+    }                                                                           
+</style>
+<body>                                                                          
+<div id="top">                                                                  
+    <h1>LimitlessIO</h1>                                                        
+    <ul id="nav">                                                               
+    <li><a href='index.html'>Home</a></li>                                      
+    <li><a href='donate.html'>Donate</a></li>                                   
+    <li><a href='contact.html'>Contact</a></li>                                 
+    </ul>                                                                       
+</div>                                                                          
+<div id='content'>                                                              
+    <div class="left-col">                                                      
+        <strong>About [Store Name]</strong></br>                                
+        <img src="images/maltron.jpeg"></img> </br>                             
+        <h6>Image description</h6></br>  
+        <strong>Why We Exist</strong> </br>                                     
+        We wanted to provide a place for the cats to enjoy before they get adopted
+        </br></br>
+    </div>                                                                      
+    <div class="right-col">                                                     
+        <img src="images/braille_display.jpeg"></img>                           
+        <h6>image description</h6> </br>
+        <strong>lorem ipsum text</strong></br>                                      
+        Lorem ipsum body</br>                                                                   
+        <strong>lorem ipsum heading</strong> </br>                                 
+        Not heading its body
+                                                                                
+    </div>                                                                      
+    <div class="continuous-content">                                            
+        <strong>About [Store name]</strong></br>                                
+
+        <img src="images/maltron.jpeg"></img> </br>                             
+        <h6>image description</h6></br>  
+        <strong>Why We Exist</strong> </br>                                     
+        Body <br/>
+        <img src="images/braille_display.jpeg"></img>                           
+        <h6>a more modern braille keyboard, photo by Rosenfield Media</h6> </br>
+        <strong>Our Approach</strong></br>                                      
+        Body</br>
+        </br>                                                                   
+        <strong>Community Effort</strong> </br>                                 
+        More body text</br>
+    </div>
+</div>                                                                      
+</body>                                                                         
+                                                                                
+</html>                                                                         
+
 
