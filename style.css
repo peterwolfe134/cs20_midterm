@@ -10,6 +10,12 @@ header {
     background-color: #FFFFFF;
 }
 
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 .title {
     display: flex;
     flex-direction: column;
@@ -23,27 +29,31 @@ nav a {
     background-color: #eb9f73;
     color: #FFFFFF;
     border-radius: 22px; 
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    /* font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; */
+    font-family: "Delius", cursive;
 }
 
 h1 {
     color: #eb9f73; 
     text-align: center; 
     
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    /* font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; */
+    font-family: "Delius", cursive;
 }
 
 h2 {
     color: #3f542d; 
     text-align: center; 
     font-size: 27px;
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    /* font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; */
+    font-family: "Delius", cursive;
 }
 
 h3 {
     color: #eb9f73;
     text-align: center; 
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    /* font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; */
+    font-family: "Delius", cursive;
     font-size: 20px;
 }
 
@@ -72,7 +82,8 @@ body {
     font-size: 24px;
     text-align: center;
     width: fit-content;
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    /* font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; */
+    font-family: "Delius", cursive;
 }
 
 footer {
