@@ -104,3 +104,13 @@ footer {
     align-items: center;
     background-color: #eb9f73;
 }
+
+.product { 
+        padding: 15px;
+        text-align: center;
+}
+	
+.product img {
+	width: 100%;
+	max-width: 170px;
+}
