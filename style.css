@@ -105,6 +105,13 @@ footer {
     background-color: #eb9f73;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
 .product { 
         padding: 15px;
         text-align: center;
