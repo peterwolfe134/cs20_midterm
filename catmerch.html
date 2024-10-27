@@ -34,8 +34,8 @@
 	</header>
 	<h1>Shop Our Merchandise</h1>
 		
-	<p style="font-size: 20px; text-align: center">By shopping our 100% sustainable merchandise, you're helping us commit to rescuing and rehoming cats now and in the future. Profits go to the maintenance of the cafe, as well as our partnered shelters. </p>
-
+	<p style="font-size: 20px; text-align: center"><i>By shopping our 100% sustainable merchandise, you're helping us commit to rescuing and rehoming cats now and in the future. Profits go to the maintenance of the cafe, as well as our partnered shelters.</i></p>
+	
 	<h2>New</h2>
 	
 	<div class="grid">
@@ -199,6 +199,7 @@
 	</div>
 
 	<div id="cart-summary"></div>
+
 	<script>
 		function ShowMoney(given){
 			if (given%1 === 0){
@@ -221,8 +222,9 @@
 		var discount = 0;
 
 		function pushtocart(name, price) {
-	    		cart.push({ name: name, price: price });
-	    		var cartlist = "";
+    		cart.push({ name: name, price: price });
+    
+    		var cartlist = "";
 		}
 
 		function checkout() {
@@ -237,7 +239,7 @@
 			if (subtotal >= 50) {
 				discount = subtotal * 0.10;
 				subtotal = subtotal - discount;
-    			}
+    		}
 			
 			var taxamt = subtotal * tax;
 			var total = subtotal + taxamt;
@@ -254,34 +256,35 @@
 
 			document.getElementById("cart-summary").innerHTML = summary;
 			var email = `<p style="text-align:center;">Thank you for shopping with us. Please enter your email below. Your receipt will be sent to your inbox and your order will be shipped within 3-5 business days!</p>
-        		
-	  		<form id="email-form" style="text-align:center;">
-	            		<input type="email" id="email" placeholder="Enter email address" required>
-	            		<button>Submit</button>
-        		</form>;
+        	<form id="email-form" style="text-align:center;">
+            <input type="email" id="email" placeholder="Enter email address" required>
+            <button>Submit</button>
+        	</form>
+    `		;
+
     		document.getElementById("cart-summary").innerHTML += email;
-		cart = [];
-	}
+			cart = [];
+		}
 	</script>
 	<button onclick="checkout()">Checkout</button>
 	
 	<footer>
 		<p>Visit our social media below!</p>
 		<div class="socials">
-	            <a href="https://www.instagram.com" target="_blank">
-	                <img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
-	            </a>
-	            <a href="https://www.facebook.com" target="_blank">
-	                <img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
-	            </a>
-	            <a href="https://x.com" target="_blank">
-	                <img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
-	            </a>
-	
-	        </div>
-		
-		<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
+				</a>
+				<a href="https://www.facebook.com" target="_blank">
+					<img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
+				</a>
+				<a href="https://x.com" target="_blank">
+					<img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
+				</a>
 
+			</div>
+
+		<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
+	
 	</footer>	
 </body>
 </html>
