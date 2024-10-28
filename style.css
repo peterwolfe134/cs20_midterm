@@ -81,6 +81,11 @@ body {
 
 }
 
+.column img {
+    width: 100%;
+    max-width: 170px;
+}
+
 .button {
     background-color: #eb9f73;
     color: #FFFFFF;
