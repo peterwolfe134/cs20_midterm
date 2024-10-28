@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Placeholder Title - Merch</title>
+<title>Meows and Mugs - Merch</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-	
 	<header>
 		<div class="title">
             <a href="home.html">
@@ -35,31 +34,25 @@
 	</header>
 	<h1>Shop Our Merchandise</h1>
 		
-	<p style="font-size: 20px; text-align: center">By shopping our 100% sustainable merchandise, you're helping us commit to rescuing and rehoming cats now and in the future. Profits go to the maintenance of the cafe, as well as our partnered shelters. </p>
-
+	<p style="font-size: 20px; text-align: center"><i>By shopping our 100% sustainable merchandise, you're helping us commit to rescuing and rehoming cats now and in the future. Profits go to the maintenance of the cafe, as well as our partnered shelters.</i></p>
+	
+	<h2>New</h2>
+	
 	<div class="grid">
 	    <div class="product">
 	        <img src="https://i.ibb.co/8BZdvYB/Screenshot-2024-10-25-at-14-00-01.png" alt="clock">
 	        <h3>Wall Clock</h3>
-	        <p>$20.00</p>
-			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
-			</select>
+	        <p>$15.00</p>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Wall Clock', 15)">Add to Cart</button>
 	    </div>
 	    
 	    <div class="product">
-	        <img src="......" alt="dress">
+	        <img src="https://i.postimg.cc/05HprMn4/Screenshot-2024-10-25-at-14-08-15.png" alt="dress">
 	        <h3>A-Line Dress</h3>
 	        <p>$20.00</p>
 			<select>
@@ -75,13 +68,13 @@
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('A-Line Dress', 20)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="........." alt="tshirt">
+	        <img src="https://i.ibb.co/rt53N3R/Screenshot-2024-10-25-at-17-57-39.png" alt="tshirt">
 	        <h3>Short-Sleeved T-Shirt</h3>
-	        <p>$20.00</p>
+	        <p>$19.00</p>
 			<select>
 				<option>Select Size</option>
 				<option>X-Small</option>
@@ -95,150 +88,203 @@
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Short-Sleeved T-Shirt', 19)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="......." alt="floormat">
-	        <h3>Floor Mat</h3>
-	        <p>$20.00</p>
-			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
-			</select>
+	        <img src="https://i.ibb.co/Vvy4BrQ/Screenshot-2024-10-25-at-14-00-50.png" alt="pin">
+	        <h3>Pinback Button</h3>
+	        <p>$6.00</p>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Pinback Button', 6)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="........" alt="phonecase">
+	        <img src="https://i.ibb.co/3SmtWQM/Screenshot-2024-10-25-at-17-57-08.png" alt="phonecase">
 	        <h3>Phone Case</h3>
-	        <p>$20.00</p>
+	        <p>$27.00</p>
 			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
+				<option>Select Phone Size</option>
+				<option>iPhone X</option>
+				<option>iPhone XR</option>
+				<option>iPhone 11</option>
+				<option>iPhone 12</option>
+				<option>iPhone 13</option>
+				<option>iPhone 14</option>
+				<option>iPhone 15</option>
+				<option>iPhone 16</option>
+				<option>iPhone 11 Pro</option>
+				<option>iPhone 12 Pro</option>
+				<option>iPhone 13 Pro</option>
+				<option>iPhone 14 Pro</option>
+				<option>iPhone 15 Pro</option>
+				<option>iPhone 16 Pro</option>
+				<option>iPhone 11 Pro Max</option>
+				<option>iPhone 12 Pro Max</option>
+				<option>iPhone 13 Pro Max</option>
+				<option>iPhone 14 Pro Max</option>
+				<option>iPhone 15 Pro Max</option>
+				<option>iPhone 16 Pro Max</option>
 			</select>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Phone Case', 6)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="........." alt="sticker">
-	        <h3>Car Sticker</h3>
-	        <p>$20.00</p>
+	        <img src="https://i.ibb.co/Q61PLW3/Screenshot-2024-10-25-at-14-03-12.png" alt="facemask">
+	        <h3>Face Mask</h3>
+	        <p>$8.00</p>
 			<select>
 				<option>Select Size</option>
-				<option>X-Small</option>
 				<option>Small</option>
 				<option>Medium</option>
 				<option>Large</option>
-				<option>X-Large</option>
 			</select>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Phone Case', 6)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="........." alt="pillow">
+	        <img src="https://i.ibb.co/5Ypkbb2/Screenshot-2024-10-25-at-14-05-56.png" alt="pillow">
 	        <h3>Throw Pillow</h3>
-	        <p>$20.00</p>
+	        <p>$25.00</p>
 			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
+				<option>Select Color</option>
+				<option>White</option>
+				<option>Black</option>
+			</select>
+			<button onclick="pushtocart('Throw Pillow', 25)">Add to Cart</button>
+	    </div>
+	
+	    <div class="product">
+	        <img src="https://i.ibb.co/51fQMNB/Screenshot-2024-10-25-at-14-05-33.png" alt="laptopcase">
+	        <h3>Laptop Case</h3>
+	        <p>$32.00</p>
+			<select>
+				<option>Select Laptop Size</option>
+				<option>MacBook Air</option>
+				<option>MacBook Pro</option>
 			</select>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Laptop Case', 32)">Add to Cart</button>
 	    </div>
 	
 	    <div class="product">
-	        <img src="........." alt="laptopsleeve">
-	        <h3>Laptop Sleeve</h3>
-	        <p>$20.00</p>
-			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
-			</select>
-			<select>
-				<option>Select Color</option>
-				<option>White</option>
-				<option>Black</option>
-			</select>
-			<button>Add to Cart</button>
-	    </div>
-	
-	    <div class="product">
-	        <img src="........." alt="notebook">
+	        <img src="https://i.ibb.co/4RM2zJ1/Screenshot-2024-10-25-at-14-03-49.png" alt="notebook">
 	        <h3>Spiral Notebook</h3>
-	        <p>$20.00</p>
-			<select>
-				<option>Select Size</option>
-				<option>X-Small</option>
-				<option>Small</option>
-				<option>Medium</option>
-				<option>Large</option>
-				<option>X-Large</option>
-			</select>
+	        <p>$12.00</p>
 			<select>
 				<option>Select Color</option>
 				<option>White</option>
 				<option>Black</option>
 			</select>
-			<button>Add to Cart</button>
+			<button onclick="pushtocart('Spiral Notebook', 12)">Add to Cart</button>
 	    </div>
 	</div>
-	
-<footer>
-	<p>Visit our social media below!</p>
-	<div class="socials">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
-            </a>
 
-        </div>
-	
-	<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
-	
-	
-	</footer>
+	<div id="cart-summary"></div>
 
+	<script>
+		function ShowMoney(given){
+			if (given%1 === 0){
+				return given + '.00';
+			}
+			else{
+				let rounded = Math.round(given*100)/100;
+				let newstr = rounded.toString().split('.');
+				if (newstr[1].length === 1){
+					return rounded + '0';
+				}
+				else{
+					return rounded;
+				}
+			}
+		}
+
+		var cart = [];
+		var tax = 0.0625;
+		var discount = 0;
+
+		function pushtocart(name, price) {
+    		cart.push({ name: name, price: price });
+    
+    		var cartlist = "";
+		}
+
+		function checkout() {
+			var summary = "<h3>Order Summary:</h3>";
+			var subtotal = 0;
+
+			for (let i = 0; i < cart.length; i++) {
+				summary = summary+ `${cart[i].name} - $${ShowMoney(cart[i].price)}<br>`;
+				subtotal = subtotal + cart[i].price;
+			}
+			
+			if (subtotal >= 50) {
+				discount = subtotal * 0.10;
+				subtotal = subtotal - discount;
+    		}
+			
+			var taxamt = subtotal * tax;
+			var total = subtotal + taxamt;
+			
+			subtotal = ShowMoney(subtotal);
+			discount = ShowMoney(discount);
+			tax = ShowMoney(tax);
+			total = ShowMoney(total);
+
+			summary += `<br>Subtotal: $${subtotal}<br>`;
+			summary += `Discount: $${discount}<br>`;
+			summary += `Tax: $${tax}<br>`;
+			summary += `<h2>Total: $${total}</h2>`;
+
+			document.getElementById("cart-summary").innerHTML = summary;
+			var email = `<p style="text-align:center;">Thank you for shopping with us. Please enter your email below. Your receipt will be sent to your inbox and your order will be shipped within 3-5 business days!</p>
+        	<form id="email-form" style="text-align:center;">
+            <input type="email" id="email" placeholder="Enter email address" required>
+            <button>Submit</button>
+        	</form>
+    `		;
+
+    		document.getElementById("cart-summary").innerHTML += email;
+			cart = [];
+		}
+	</script>
+	<button onclick="checkout()">Checkout</button>
 	
+	<footer>
+		<p>Visit our social media below!</p>
+		<div class="socials">
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
+				</a>
+				<a href="https://www.facebook.com" target="_blank">
+					<img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
+				</a>
+				<a href="https://x.com" target="_blank">
+					<img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
+				</a>
+
+			</div>
+
+		<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
+	
+	</footer>	
 </body>
 </html>

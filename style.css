@@ -1,3 +1,7 @@
+/* dumb hack. make sure no content is disappearing off of the right edge */
+html {
+    overflow-x: hidden; 
+}
 a:hover {color : #326902;}
 header {
     position: sticky;
@@ -74,11 +78,20 @@ body {
 .columns {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .column {
+    justify-content: space-around;
     text-align: center;
+    min-width: 250px;
+    max-width: 30%;
+    margin: 2px;
+}
 
+.column img {
+    width: 100%;
+    max-width: 170px;
 }
 
 .button {
@@ -103,6 +116,13 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #eb9f73;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .product { 
