@@ -34,7 +34,7 @@
 			</table>
 		</nav>
 	</header>
-	<h1>Donate</h1>
+
 	<h1>Contact</h1>
      
 	<p style="font-size: 15px; text-align: left">If you have any questions, concerns, or suggestions, please fill out the form below, and we'll get back to you within 2 business days.</p>
@@ -45,7 +45,11 @@
 		<br>
 
 		<label for="email">Email:</label>
-		<textarea id="email" name="email" rows="2"></textarea>
+    		<input type="email" id="email" name="email" placeholder="name@example.com" required>
+    		<be>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
 		<br>
 
 		<label for="subject">Subject:</label>
@@ -54,7 +58,10 @@
 
 		<label for="message">Message:</label>
 		<textarea id="message" name="message" rows="5" required></textarea>
-		<br>
+		<be>
+
+		<label><input type="checkbox" name="promo" value="acceptpromo"> Send me updates about events happening at the cafe.</label>
+    		<br><br>
 
 		<input type="submit" value="Submit">
 	</form>
