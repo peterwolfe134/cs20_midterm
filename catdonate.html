@@ -15,7 +15,7 @@
 <body>
 	
 	<header>
-		<div class="title">
+	<div class="title">
             <a href="home.html">
             <img src="images/logo.webp" alt="logo" width="100">
         	</a>
@@ -29,17 +29,60 @@
 					<td><a href="catmenu.html">Menu</a></td>
 					<td><a href="catmerch.html">Merch</a></td>
 					<td><a href="catdonate.html">Donate</a></td>
+					<td><a href="catcontact.html">Donate</a></td>
 				</tr>
 			</table>
 		</nav>
 	</header>
 	<h1>Donate</h1>
 		
-	<p style="font-size: 20px; text-align: center">Fill in ai generated donation request (include organizations we're partnered with) </p>
+	<p style="font-size: 20px; text-align: center">Your donations are tax-deductible and greatly appreciated! There are four easy ways to contribute to our cause. Choose to donate directly to the cat cafe, support our Amazon wishlist, or contribute to our partnered organizations. Every donation helps us provide a safe and loving environment for our feline friends!</p>
 	
-	<p style="text-align: center">
-	<a href="https://website.com/adopt" class="button" style="font-size: 17px">Clich Here to Donate</a></p>
+	<h2>Donate Directly to Meows &amp; Mugs</h2>
+	<p style="text-align: center">Select a donation amount below.</p>
 	
+	<div class="columns">
+        <div class="column">
+            <button class="donatebutton" data-amount="25" onclick="confirmpay(25);" >$25</button>
+        </div>
+        <div class="column">
+            <button class="donatebutton" data-amount="50" onclick="confirmpay(50);">$50</button> 
+        </div>
+        <div class="column">
+            <button class="donatebutton" data-amount="150" onclick="confirmpay(25);">$150</button>
+        </div>
+        <div class="column">
+            <input type="number" id="customamt" placeholder="Enter custom amount" max="3999"/>
+            <button class="donatebutton" id="custom" onclick="confirmcustom();">Donate</button>
+        </div>
+    </div>
+	<div id="confirm-purchase"></div>
+	<div id="tax-details" style="text-align: center; margin-top: 20px;"></div>
+	
+	<h2 id="runningtotal" style=" background-image: url('https://i.ibb.co/LYqmqKf/banner.jpg'); padding: 20px; background-size: cover; background-position: center; color: #ffffff; text-align: center; font-size: 30px;">Total Contributions: $<span id="donationtally">12153</span></h2>
+	
+	<br>
+	  
+	<h2>Other Ways to Help</h2>
+	<div class="columns">
+        <div class="column" style="background-image: url('https://i.ibb.co/1bfVPFN/image-1.jpg');">
+            <h3>Donate to Our Amazon Wishlist</h3>
+            <p style="color: #ffffff">You can also contribute to our Amazon wishlist to help us purchase specific supplies our cats need. Thank you for your generosity!</p>
+            <a href="https://www.amazon.com/hz/wishlist/ls/86923Y9EZM92?ref_=wl_share" target="_blank" class="button">View Wishlist</a>
+        </div>
+        
+        <div class="column" style="background-image: url('https://i.ibb.co/gdhkRFp/image-2.jpg');">
+            <h3>Donate to ARL Bostion</h3>
+            <p style="color: #ffffff">You can also support our partnered organization, the Animal Rescue League of Boston, through donations that will help more than 16,700 animals yearly.</p>
+            <a href="https://secure2.convio.net/arlob/site/Donation2;jsessionid=00000000.app20117a?df_id=4580&mfc_pref=T&4580.donation=form1&NONCE_TOKEN=F2808F8DADD08D6BAFF2E151399D46A4&_ga=2.221157405.429824095.1690811477-1701134249.1655306410" target="_blank" class="button">Donate</a>
+        </div>
+        
+        <div class="column" style="background-image: url('https://i.ibb.co/LCfbLdY/image.jpg');">
+            <h3>Become a Sponsor</h3>
+            <p style="color: #ffffff">If you're unable to adopt but would love to provide healthcare, food, and shelter for a special needs cat, learn more about becoming a sponsor with our partner, Tabby's Place.</p>
+            <a href="https://www.tabbysplace.org/gift-catalog/sponsorships/" target="_blank" class="button">Sponsor</a>
+        </div>
+    </div>
 	<br>
 	
 <footer>
@@ -58,10 +101,60 @@
         </div>
 	
 	<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
-	
-	
 	</footer>
-
 	
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script>
+		var d_total = 12153;
+		function ShowMoney(given) {
+            if (given % 1 === 0) {
+                return given + '.00';
+            } else {
+                let rounded = Math.round(given * 100) / 100;
+                let newstr = rounded.toString().split('.');
+                if (newstr[1].length === 1) {
+                    return rounded + '0';
+                } else {
+                    return rounded;
+                }
+            }
+        }
+			
+	function confirmcustom(){
+		var d_given = parseFloat($('#customamt').val());
+		confirmpay(d_given);
+	}
+
+	function confirmpay(num) {
+		var taxamt = num * 0.0625; 
+		var total = num + taxamt;
+		$('#tax-details').text(`Tax-invcusive total: $${total.toFixed(2)}.`);
+		
+		var confirmation = `
+			<p style="text-align:center;">We accept credit or debit card payments. Please enter your credit or debit card information below to finish your payment.</p>
+			<form id="number-form" style="text-align:center;" onsubmit="event.preventDefault();">
+			<input type="number" id="number1" placeholder="1234 5678 1234 5678" required>
+			<button type="submit">Submit</button>
+			</form>
+
+			<form id="number-form2" style="text-align:center;" onsubmit="event.preventDefault();">
+			<input type="number" id="number2" placeholder="CVV" required>
+			<button type="submit">Submit</button>
+			</form>
+
+			<form id="number-form3" style="text-align:center;">
+			<input type="number" id="number3" placeholder="Zip code" required>
+			<button type="submit">Submit</button>
+			</form>`;
+		
+		d_total += num;
+		$('#runningtotal').fadeOut(function() {
+			$(this).text(`Total Contributions: $${ShowMoney(d_total)}`); 
+			$(this).fadeIn();
+		});
+		
+		document.getElementById("confirm-purchase").innerHTML = confirmation;
+	}
+	</script>	
 </body>
 </html>
