@@ -9,13 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Delius&family=DynaPuff:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
-
 	
 </head>
 
-<body>
-	
+<body>	
 	<header>
 		<div class="title">
             <a href="home.html">
@@ -40,19 +37,20 @@
 	<p style="text-align:center;">	
 	<img src="https://i.ibb.co/Dtt7j2N/visitt.jpg" alt="visitbanner" border="0" style="width: 100%;"></p>
 		
-     
-	<p style="font-size: 20px; text-align: center">Fill in ai generated paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ligula. Donec id tortor erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
+	<p style="font-size: 20px; text-align: center">Welcome to our booking page! Here, you can schedule a unique visit to our cat café and enjoy quality time with our friendly cats. Select from various session types to find the perfect experience for you, from cozy meet-and-greets to private events. We look forward to sharing our space and furry friends with you!</p>
+	<p style="font-size: 20px; text-align: center"><i>It is necessary to be aware of our rules before coming in to the cafe. This is for the safety of all the visitors as well as our cats. Failure to abide by the rules may result in a ban from the cafe. <a href="catcontact.html" target="_blank">Click here to access our rules.</a></i></p>
+	
 	<table>
         <tr>
             <td>
                 <img src="https://i.ibb.co/9gHSchR/cat2.webp" alt="50mins" width="150">
             </td>
             <td>
-                <h3>50 Minute Appointment</h3>
-                <p>Enjoy a 50-minute session with our cats for individuals aged 15 and above. Library and cafe are accessible before and after the session.</p>
+                <h2 style="text-align: left">Basic Cat Lounge Visit</h2>
+                <p>Enjoy a 50-minute session in the lounge with our cats for individuals aged 15 and above. Library and cafe are accessible before and after the session.</p>
                 <p>Price: $20 per person</p>
-                <a href="https://website.com/menu" class="button" style="font-size: 13px">Book</a>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit')">Book</button>
+				<div id="book-visit"></div>
             </td>
         </tr>
         <tr>
@@ -60,10 +58,11 @@
                 <img src="https://i.ibb.co/tQ5TQxd/cat3.jpg" alt="group" width="150">
             </td>
             <td>
-                <h3>50 Minute Group Appointment (4+ People)</h3>
+                <h2 style="text-align: left">Basic Group Appointment (4+ People)</h2>
                 <p>Bring your friends and enjoy a group session with our furry companions.</p>
                 <p>Price: $65, up to 6 people</p>
-                <a href="https://website.com/menu" class="button" style="font-size: 13px">Book</a>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit2')">Book</button>
+				<div id="book-visit2"></div>
             </td>
         </tr>
         <tr>
@@ -71,10 +70,11 @@
                 <img src="https://i.ibb.co/wBjb4S6/cat4.webp" alt="paint" width="150">
             </td>
             <td>
-                <h3>2 Hour Paint with Cats</h3>
+                <h2 style="text-align: left">2 Hour Paint with Cats</h2>
                 <p>Unleash your creativity while enjoying the company of our playful cats. Acrylic and watercolor paints provided.</p>
                 <p>Price: $40 per person</p>
-                <a href="https://website.com/menu" class="button" style="font-size: 13px">Book</a>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit3')">Book</button>
+				<div id="book-visit3"></div>
             </td>
         </tr>
         <tr>
@@ -82,36 +82,68 @@
                 <img src="https://i.ibb.co/K9xq6wx/cat.jpg" alt="saturday" width="150">
             </td>
             <td>
-                <h3>Saturday Study Special (1.5 Hours)</h3>
+                <h2 style="text-align: left">Saturday Study Special</h2>
                 <p>Join us on Thursdays for a 1.5-hour session with complimentary pastries and coffee of your choice!</p>
                 <p>Price: $30 per person</p>
-                <a href="https://website.com/menu" class="button" style="font-size: 13px">Book</a>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit4')">Book</button>
+				<div id="book-visit4"></div>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="https://i.ibb.co/PQrJQ44/catparty.jpg" alt="party" width="150">
+            </td>
+            <td>
+                <h2 style="text-align: left">Private Party Reservation</h2>
+                <p>2-hour private event for up to 10 guests, complete with a reserved space, snacks, and beverages.</p>
+                <p>Price: $150 (includes drinks and snacks for guests)</p>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit5')">Book</button>
+				<div id="book-visit5"></div>
+            </td>
+        </tr>
+		<tr>
+            <td>
+                <img src="https://i.ibb.co/B2D7kYd/adoption.webp" alt="adopt" width="150">
+            </td>
+            <td>
+                <h2 style="text-align: left">Cat Adoption Consultation</h2>
+                <p>30-minute one-on-one consultation with staff about adopting a cat from the café, including a Q&amp;A session and support on caring for a new cat.</p>
+                <p>Price: Free</p>
+                <button class="button" style="font-size: 13px" onclick="bookvisit('book-visit6')">Book</button>
+				<div id="book-visit6"></div>
             </td>
         </tr>
     </table>
 	<br>
-	
-	
-<footer>
-	<p>Visit our social media below!</p>
-	<div class="socials">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
-            </a>
+	<footer>
+		<p>Visit our social media below!</p>
+		<div class="socials">
+				<a href="https://www.instagram.com" target="_blank">
+					<img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
+				</a>
+				<a href="https://www.facebook.com" target="_blank">
+					<img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
+				</a>
+				<a href="https://x.com" target="_blank">
+					<img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
+				</a>
 
-        </div>
-	
-	<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
-	
-	
+			</div>
+
+		<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
 	</footer>
-
-	
+	<script>
+	function bookvisit(givenid){
+		var email = `
+			<p style="text-align:center;">Thank you for booking with us! Please enter your email below to receive your booking details and instructions on how to complete your payment.</p>
+			<form id="email-form" style="text-align:center;">
+				<input type="email" id="email" placeholder="Enter email address" required>
+				<button type="submit">Submit</button>
+			</form>
+		`;
+		
+		document.getElementById(givenid).innerHTML = email;
+	}
+	</script>
 </body>
 </html>
