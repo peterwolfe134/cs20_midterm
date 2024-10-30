@@ -94,7 +94,7 @@ body {
     max-width: 170px;
 }
 
-.button {
+.button, .donatebutton{
     background-color: #eb9f73;
     color: #FFFFFF;
     margin: 0 3px;
