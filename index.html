@@ -1,74 +1,103 @@
-<html>                                                                          
-<head>                                                                          
-<link rel="stylesheet" href="styles.css">                                       
-<style type="text/css">                                                         
-    #content {position:absolute;  top: 220px; width: 100%; font-size: 20px;}    
-                .left-col{background-color:#ffffff; width: 30%; display:inline-block;height:300px;
-                                  vertical-align: top; padding: 5%; }           
-                .right-col{width: 30%; display:inline-block; position:relative; 
-                                        background-color:#ffffff;padding: 5%;}  
-        .continuous-content{                                                    
-            width: 100%;                                                        
-            display:none                                                        
-        }                                                                       
-    @media (max-width:650px)                                                    
-    {                                                                           
-        .left-col{display: none}                                                
-        .right-col{display: none}                                               
-        .continuous-content{display: block;}                                    
-    }                                                                           
-    @media (max-width:400px)                                                    
-    {                                                                           
-        ul#nav a {                                                              
-        padding: 2px 5px;                                                       
-        font-size: 15px;                                                        
-        }                                                                       
-    }                                                                           
-</style>
-<body>                                                                          
-<div id="top">                                                                  
-    <h1>replace with nav</h1>                                                        
-    <a href="home.html"> this code will be integrated with the rest. For now, it is here as an example incase anyone else wants to try working on mobile-ish sizes</a>
-    <ul id="nav">                                                               
-    </ul>                                                                       
-</div>                                                                          
-<div id='content'>                                                              
-    <div class="left-col">                                                      
-        <strong>About [Store Name]</strong></br>                                
-        Text
-        <img src="images/maltron.jpeg"></img> </br>                             
-        <h6>Image description</h6></br>  
-        <strong>Why We Exist</strong> </br>                                     
-        We wanted to provide a place for the cats to enjoy before they get adopted
-        </br></br>
-    </div>                                                                      
-    <div class="right-col">                                                     
-        <img src="images/braille_display.jpeg"></img>                           
-        <h6>image description</h6> </br>
-        <strong>lorem ipsum text</strong></br>                                      
-        Lorem ipsum body</br>                                                                   
-        <strong>lorem ipsum heading</strong> </br>                                 
-        Not heading its body
-                                                                                
-    </div>                                                                      
-    <div class="continuous-content">                                            
-        <strong>About [Store name]</strong></br>                                
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Placeholder Title - Home</title>
 
-        <img src="images/maltron.jpeg"></img> </br>                             
-        <h6>image description</h6></br>  
-        <strong>Why We Exist</strong> </br>                                     
-        Body <br/>
-        <img src="images/braille_display.jpeg"></img>                           
-        <h6>a more modern braille keyboard, photo by Rosenfield Media</h6> </br>
-        <strong>Our Approach</strong></br>                                      
-        Body</br>
-        </br>                                                                   
-        <strong>Community Effort</strong> </br>                                 
-        More body text</br>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=DynaPuff:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	<header>
+		<div class="title">
+            <a href="home.html">
+            <img src="images/logo.webp" alt="logo" width="100">
+        	</a>
+        </div>
+		<nav>
+			<table style="margin: 0 auto;">
+				<tr>
+					<td><a href="catabout.html">About</a></td>
+					<td><a href="catvisit.html">Visit</a></td>
+					<td><a href="catadopt.html">Adopt</a></td>
+					<td><a href="catmenu.html">Menu</a></td>
+					<td><a href="catmerch.html">Merch</a></td>
+					<td><a href="catdonate.html">Donate</a></td>
+					<td><a href="catcontact.html">Contact</a></td>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<h1>Home</h1>
+	<p style="text-align:center;">	
+	<img src="images/home-photo.webp" alt="homebanner" border="0" style="width: 100%;"></p>
+		
+	<h2>Welcome to Meows &amp; Mugs!</h2>
+     
+	<p style="font-size: 20px; text-align: center">Welcome to Meows &amp; Mugs! Our cozy Medford-based cat café is a haven for cat lovers and coffee enthusiasts alike. Here, you can relax with a warm cup of coffee, savor homemade treats, and enjoy the soothing company of our resident cats, all of whom are looking for loving forever homes. At Meows &amp; Mugs, we believe in creating a peaceful, welcoming environment where people and felines can unwind together. Every visit helps support our mission to provide shelter, care, and compassion to cats in need. Thank you for stopping by, and we hope you leave with a warm heart and maybe a new furry friend!</p>
+	
+	<p style="text-align: center">
+	<a href="catvisit.html" class="button">Book Your Visit!</a></p>
+	
+	<div class="columns">
+		<div class="column">
+				<h2>Cute Cats!</h2>
+				<p>Meet the CUTEST cats in the Medford/Somerville area. They are GUARANTEED to make your heart melt and explode in joy!</p>
+				<a href="catadopt.html" class="button" style="font-size: 17px">Adopt</a>
+			</div>
+			<div class="column">
+				<h2>Family Fun!</h2>
+				<p>Splendid fun for everyone! Take a look at our booking rates for family discounts.</p>
+				<a href="catvisit.html" class="button" style="font-size: 17px">Adopt</a>
+			</div>
+			<div class="column">
+				<h2>Tasty Treats!</h2>
+				<p>Fresh pastries prepared in house every morning. Teas and coffees sourced from local suppliers. We only sell sustainable food.</p>
+				<a href="catmenu.html" class="button" style="font-size: 17px">Menu</a>
+			</div>
+	</div>
+	
+	<div class="columns">
+    <div class="column" style="display: flex; flex-direction: column; justify-content: space-between; background-image: url(https://i.ibb.co/3dLk9Wb/adoption.jpg); background-size: cover; background-position: center; padding: 20px; color: white;">
+        <p>Talk about adopting the cats... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ligula. Donec id tortor erat.</p>
+        <p style="text-align: center">
+            <a href="https://website.com/adopt" class="button" style="font-size: 17px">Adopt</a>
+        </p>
     </div>
-</div>                                                                      
-</body>                                                                         
-                                                                                
-</html>                                                                         
+    
+    <div class="column" style="display: flex; flex-direction: column; justify-content: space-between; background-image: url(https://i.ibb.co/ZVbyVYy/jpeg-optimizer-menupicture.jpg); background-size: cover; background-position: center; padding: 20px; color: white;">
+        <p>Talk about our vegan-friendly menu... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ligula. Donec id tortor erat.</p>
+        <p style="text-align: center">
+            <a href="https://website.com/menu" class="button" style="font-size: 17px">Menu</a>
+        </p>
+    </div>
+</div>
+	
+<footer>
+	<p>Visit our social media below!</p>
+	<div class="socials">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://i.ibb.co/GV6tfGx/insta.png" alt="instagram" width="25px">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://i.ibb.co/LpK81Yn/facebook.png" alt="facebook" width="25px">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="https://i.ibb.co/SdSmkXM/twitter.jpg" alt="X" width="25px">
+            </a>
 
+        </div>
+	
+	<p style="font-size: 12px">&copy; 2017 - 2024 Placeholder Title | All Rights Reserved <br>Licensed to keep or train animals for exhibition<br>Non-Profit 501(c)3 Corporation EIN #88-1001665</p>
+	
+	
+	</footer>
 
+	
+</body>
+</html>
