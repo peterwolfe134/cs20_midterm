@@ -129,7 +129,7 @@
 	function confirmpay(num) {
 		var taxamt = num * 0.0625; 
 		var total = num + taxamt;
-		$('#tax-details').text(`Tax-invcusive total: $${total.toFixed(2)}.`);
+		$('#tax-details').text(`Tax-inclusive total: $${total.toFixed(2)}.`);
 		
 		var confirmation = `
 			<p style="text-align:center;">We accept credit or debit card payments. Please enter your credit or debit card information below to finish your payment.</p>
